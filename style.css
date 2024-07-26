@@ -47,7 +47,8 @@ body {
 
 .city-container .mid-text {
     width: 50%;
-    /* margin-left: 25em; */
+    margin-left: 40px;
+   
 }
 .city-container image {
     width: 150px;
@@ -55,8 +56,8 @@ body {
 }
 
 table, th, td {
-    border: 1px solid black; 
-    width: 60%; 
+    border: 2px solid black; 
+    width: 50%; 
     border-collapse: collapse;
 }
 
@@ -69,51 +70,53 @@ th {
 
 .lang {
     font-size: 1.5em;
+.column for-text{
+    width: 40%;
+} 
 }
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.subject-text {
-    max-width: 10%;
+.Machine-Learning, .Full-Stack, .Business-Systems{
+    display: flex;
+
 }
 
-.subject-images img {
-    width: 90%;
-    margin-top: 5em;
+.flex-images {
+    display: block;
+}
+.places-container img {
+    margin: 1em;
+
 }
 
 .places-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.places-text {
-    max-width: 10%; 
-}
-.places-images img {
-    width: 90%;
-    margin-top: 5em;
+.constitution, .apartheid , .human-kind{
+    display: flex;
+
 }
 
-/* .amira-image img {
-    max-width: 500px;
-} */
+.places-images {
+    display: block;
+}
 
 @media (max-width: 600px) {
     .city-container {
         /* display: block; */
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
 
     }
 
     .amira-image img {
-        max-width: 200px;
+        max-width: 200%;
     }
 
     .tokyo-image img {
@@ -124,16 +127,36 @@ th {
         width: 100%;
     }
 
-    .flex-containerr .subject-text p {
-        background-color: red;
+.flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4em;
+        justify-content: space-between;  
     }
     .subject-text p {
-        background-color: brown;
-        width: 94px;
+        max-width: 100%;
+        margin-right: .5em;
+        margin-top: 1em;
     }
     
     .subject-images img {
-        width: 40%;
-        margin-left: 1em;
+        flex: 1;
+        max-width: 45%;
+        margin-right: .5em;
+        margin-top: 2.5em;
+        object-fit: cover;
     }
+
+
+    .places-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4em;
+        justify-content: space-between;
+    }
+    .apartheid {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    } 
 }
